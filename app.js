@@ -27,6 +27,16 @@ document.getElementById("B12").addEventListener('click', function() {
     h1.remove();
 })
 
+let BotonRegresar = document.getElementById("BotonRegresar");  // Asegúrate de tener un botón con id "BotonRegresar" en tu HTML
+
+BotonRegresar.addEventListener('click', function() {
+    // Restaura el título
+    let h1 = document.createElement("h1");
+    h1.id = "Titulo";
+    h1.textContent = "Elije una Opcion 🤔";  // Este es el texto original del título
+    document.body.appendChild(h1);
+});
+
 const canvas = document.getElementById('Flor');
 const ctx = canvas.getContext('2d');
 
