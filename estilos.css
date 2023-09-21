@@ -211,7 +211,11 @@ canvas {
     transition-delay: 0.75s;
 }
 
-@media (max-width: 820px) {
+.borrar{
+    display: none;
+
+}
+@media (max-width: 890px) {
 
 
     .Contenedor {
@@ -229,4 +233,32 @@ canvas {
     }
 }
 
+@media (max-width: 469px) {
+
+
+    body {
+        /* Asegúrate de reemplazar 'ruta/a/tu/imagen.jpg' con la ruta a tu imagen */
+    background-image: url('photo.jpg');
+  
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    }
+    canvas{
+    aspect-ratio: auto 400 / 100;
+    }   
+
+    #Flor{ 
+        margin-left: -300px;
+        margin-right: auto;
+        
+    }
+
+    .Texto {
+        color: white;
+        text-align: center;
+        
+    }
+}
 
