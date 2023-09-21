@@ -1,7 +1,18 @@
 body {
-    background-image: linear-gradient(to bottom left,  rgb(255, 0, 234),rgb(0, 225, 255));
+      /* Asegúrate de reemplazar 'ruta/a/tu/imagen.jpg' con la ruta a tu imagen */
+  background-image: url('photo.jpg');
+
+  /* Centrar y escalar la imagen de fondo */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Ajustar el tamaño del cuerpo al tamaño de la ventana gráfica */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   }
-  
+
 h1 {
     text-align: center;
     font-size: 100px;
@@ -31,15 +42,20 @@ canvas {
 .Texto {
     display: none;
     color: white;
+    text-align: center;
 }
 .Texto h2 {
     font-size: 50px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; /* Esto crea un borde negro alrededor del texto */
+}
+.Texto h3{
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; /* Esto crea un borde negro alrededor del texto */
 }
 .Contenedor-Binicio {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 300px;
 }
 
 .Con-Emergente{
@@ -87,48 +103,55 @@ canvas {
 
 .btn-neon{
     
-    position: relative;
+    position: flex;
     display: inline-block;
     padding: 15px 30px;
-    color: #fff;
+    color: #ffffff;
+    background-color: greenyellow;
     letter-spacing: 4px;
     text-decoration: none;
     font-size: 24px;
     overflow: hidden;
     transition: 0.2s;
     justify-content: center;
-  align-items: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    border-color: #FF0000;
  
 }
 .btn-neon1{
-     display: none;
+    display: none;
     position: fixed;
-    top: 20px;
+    top: 250px;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
     padding: 30px;
     padding: 15px 30px;
-    color: #00000;
-    background-color: #f9f9f9;
+    color: black;
+    background-color: white;
     letter-spacing: 4px;
     text-decoration: none;
     font-size: 24px;
     overflow: hidden;
     transition: 0.2s;
     justify-content: center;
-  align-items: center;
+    align-items: center;
+    border-radius: 30px;
+
+
  
 }
 .btn-neon:hover{
     background: #FFFF00;
     box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
  }
  .btn-neon1:hover{
     background: #FFFF00;
     box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
  }
 .btn-neon span{
     position: absolute;
@@ -138,10 +161,6 @@ canvas {
     position: absolute;
     display: block;
 }
-
-
-
-
 
 
 #span1{
@@ -191,4 +210,23 @@ canvas {
     transition: 1s;
     transition-delay: 0.75s;
 }
+
+@media (max-width: 820px) {
+
+
+    .Contenedor {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #Flor{ 
+        margin-left: -80px;
+        margin-right: auto;
+        
+    }
+}
+
 
